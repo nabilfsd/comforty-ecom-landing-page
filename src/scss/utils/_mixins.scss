@@ -1,0 +1,7 @@
+@mixin header-button($width) {
+  height: 44px;
+  width: $width;
+  background-color: #ffffff;
+  color: #272343;
+  border-radius: 8px;
+}

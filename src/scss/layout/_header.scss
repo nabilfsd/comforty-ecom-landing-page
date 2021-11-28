@@ -1,0 +1,166 @@
+@import '../utils/mixins';
+
+#header-section {
+  header {
+    .sub-header {
+      background-color: #272343;
+      height: 45px;
+
+      &__header-title-left {
+        padding: 14.5px 0;
+
+        svg {
+          height: 16px;
+        }
+
+        p {
+          color: #fff;
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 14.3px;
+          margin-left: 8px;
+          top: 1px;
+          padding-top: 1px;
+        }
+      }
+
+      // end .header-title-left
+
+      &__header-content-right {
+        padding: 14px 0;
+
+        ul {
+          font-size: 13px;
+          height: 17px;
+
+          li {
+            list-style: none;
+            padding: 0 12px;
+
+            select {
+              background-color: #272343;
+              color: white;
+              border: 1px solid #272343;
+
+              &:focus-visible {
+                outline: 1px solid #272343;
+              }
+            }
+
+            // end select
+
+            a {
+              text-decoration: none;
+              color: white;
+            }
+
+            &:last-child {
+              padding-right: 0;
+            }
+          }
+
+          // end li
+        }
+
+        // end ul
+      }
+
+      // end .header-title-right
+    }
+
+    // end .sub-header
+
+    .main-header {
+      background-color: #F0F2F3;
+      // padding: 20px;
+
+      &__logo-wrapper {
+        padding: 22px 0;
+      }
+
+      &__search-wrapper {
+        padding: 20px 0;
+        width: 413px;
+
+        .search-form {
+
+          .search-box {
+            position: relative;
+
+            .search-box-input {
+              background: white;
+              padding: 12px 0 13px 16px;
+              caret-color: gray;
+              border-radius: 5px;
+
+              &:focus-visible {
+                outline: 0;
+              }
+            }
+
+            svg {
+              position: absolute;
+              top: 14px;
+              right: 16px;
+            }
+          }
+        }
+      }
+
+      // end .search-wrapper
+
+      &__cart-wrapper {
+        .cart-button-wrapper {
+
+          .cart-button {
+            @include header-button(120px);
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 13.2px;
+            padding: 11px 16px;
+
+            .cart-icon {
+              margin-right: 8px;
+            }
+
+            .cart-item-counter {
+              margin-left: 12px;
+              color: white;
+              background-color: #007580;
+              height: 20px;
+              width: 20px;
+              line-height: 20px;
+              border-radius: 50px;
+              padding-left: 6px;
+
+            }
+          }
+        }
+
+        // end .cart-button-wrapper
+
+        .like-button-wrapper {
+
+          .like-button {
+            @include header-button(44px);
+            margin-left: 12px;
+            padding: 11px;
+          }
+        }
+
+        .user-button-wrapper {
+
+          .user-button {
+            @include header-button(44px);
+            margin-left: 12px;
+            padding: 11px;
+          }
+        }
+      }
+    }
+  }
+
+  // end header
+}
+
+// end #header-section

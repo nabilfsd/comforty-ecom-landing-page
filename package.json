@@ -1,0 +1,17 @@
+{
+  "name": "comforty_ecom_figma_to_html",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.43.4",
+    "vite": "^2.6.4"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.10.2",
+    "bootstrap": "^5.1.3"
+  }
+}
