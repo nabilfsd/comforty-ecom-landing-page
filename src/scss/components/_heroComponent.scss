@@ -1,0 +1,130 @@
+#hero-section {
+  background: $mainHeaderBG;
+  height: 850px;
+  width: calc(100vw - 180px);
+  margin: 0 auto;
+  border-radius: 0 0 48px 48px;
+
+  .container {
+    height: 100%;
+
+    .slider-wrapper {
+      position: relative;
+      height: 100%;
+      background-image: url('./src/assets/img/all-extract-images/slider-bg-circle.svg');
+      background-repeat: no-repeat;
+      background-size: 800px;
+      background-position-x: center;
+    }
+
+    .slider-arrows {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+
+      .left-arrow {
+        @include sliderButton;
+        margin-left: -62px;
+      }
+
+      .right-arrow {
+        @include sliderButton;
+        margin-right: -62px;
+      }
+    }
+
+    .slider-content {
+      .hero-text-content {
+        margin-top: 263px;
+
+        p {
+          text-transform: uppercase;
+          font-size: 14px;
+          color: $subHeaderBG;
+          line-height: 14px;
+          margin-bottom: 8px;
+        }
+
+        h1 {
+          text-transform: capitalize;
+          font-size: 68px;
+          font-weight: 700;
+          line-height: 110%;
+          color: $subHeaderBG;
+          margin-bottom: 35px;
+        }
+
+        .shop-now-btn {
+          @include baseButton(171px, 52px, 8px);
+          background: $shopNowBtnBG;
+          color: white;
+          // display: inline;
+          padding: 14px 20px;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 110%;
+          text-transform: capitalize;
+          transition: all .3s ease-in-out;
+
+          &:hover {
+            background-color: $navbarMenuAccentTextColor;
+
+            svg {
+              transform: translateX(5px);
+              transition: all .3s ease-in-out;
+            }
+          }
+
+          svg {
+            margin-left: 15px;
+          }
+        }
+      }
+
+      .hero-image-content {
+        position: relative;
+
+        .hero-product-image-price {
+          position: absolute;
+          top: 82px;
+          right: 50px;
+          background-image: url('./src/assets/img/banner/banner-product-price-bg.svg');
+          background-repeat: no-repeat;
+          width: 140px;
+          height: 124px;
+
+          .price-content {
+            position: absolute;
+            left: 31px;
+            top: 33px;
+
+            span {
+              color: $bannerProductPriceTextColor;
+              font-size: 36px;
+              line-height: 39.6px;
+              text-align: center;
+              font-weight: 700;
+            }
+
+            p {
+              font-size: 14px;
+              font-weight: 500;
+              line-height: 110%;
+              letter-spacing: 0.02em;
+              color: $subHeaderBG;
+            }
+          }
+        }
+
+        .hero-product-image {
+          margin-top: 82px;
+          height: 649px;
+          width: 475px;
+        }
+      }
+    }
+  }
+}

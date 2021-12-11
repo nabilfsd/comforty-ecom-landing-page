@@ -1,0 +1,14 @@
+@mixin sliderButton {
+  @include baseButton(52px, 52px, 100px);
+  line-height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin baseButton($width, $height, $borderRadius) {
+  height: $height;
+  width: $width;
+  background-color: #ffffff;
+  border-radius: $borderRadius;
+}
