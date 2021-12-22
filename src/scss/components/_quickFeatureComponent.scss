@@ -1,0 +1,35 @@
+#quick-feature {
+  .quick-feature-content {
+    height: 150px;
+    background-color: #fff;
+    padding: 50px 70px;
+    margin-top: -76px;
+    border-radius: 12px;
+    box-shadow: 0px 24px 100px rgba(22, 25, 50, 0.07);
+    margin-bottom: 100px;
+
+    &__discount {
+      &__content {
+        @include quickFeatureContentStyle;
+      }
+    }
+
+    &__delivery {
+      &__content {
+        @include quickFeatureContentStyle;
+      }
+    }
+
+    &__support {
+      &__content {
+        @include quickFeatureContentStyle;
+      }
+    }
+
+    &__payment {
+      &__content {
+        @include quickFeatureContentStyle;
+      }
+    }
+  }
+}
